@@ -28,5 +28,7 @@ public class CloseItem extends AbstractItem implements SingleItemProvider {
     @Override
     public void onClick(Player player, InventoryClickEvent event, ItemStack item, SlotPos pos, ActiveMenu activeMenu) {
         player.closeInventory();
+        player.performCommand("menu");
     }
+
 }
